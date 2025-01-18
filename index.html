@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/translate@1.10.0/translate.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Translate App</h1>
+        <div class="input-group">
+            <label for="sourceLanguage">Source Language:</label>
+            <select id="sourceLanguage"></select>
+        </div>
+        <div class="input-group">
+            <div class="textarea-wrapper">
+                <textarea id="inputText" placeholder="Matnni kiriting..."></textarea>
+                <button class="voice-btn" id="sourceVoiceBtn" style="display: none;">
+                    <img src="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_150_icon-icons.com_61510.png" alt="Play Voice">
+                </button>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="targetLanguage">Target Language:</label>
+            <select id="targetLanguage"></select>
+        </div>
+        <div class="input-group">
+            <div class="textarea-wrapper">
+                <textarea id="translationOutput" placeholder="Tarjima natijasi..." readonly></textarea>
+                <button class="voice-btn" id="targetVoiceBtn" style="display: none;">
+                    <img src="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_150_icon-icons.com_61510.png" alt="Play Voice">
+                </button>
+            </div>
+        </div>
+        <button id="translateBtn">Tarjima qilish</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
