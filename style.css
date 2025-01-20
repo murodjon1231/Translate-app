@@ -65,18 +65,17 @@ button {
   transition: background 0.3s ease;
 }
 
-button:hover {
-  background: linear-gradient(135deg, #2575fc, #6a11cb);
-}
+
 
 .voice-btn {
   background: none;
   border: none;
   cursor: pointer;
   position: absolute;
-  right: 10px;
-  top: 50%;
+  right: -180px;
+  top: 90px;
   transform: translateY(-50%);
+
 }
 
 .voice-btn img {
@@ -128,6 +127,7 @@ button:hover {
   }
 
   .voice-btn {
-    right: 5px;
+    right: -145px;
+    top: 74px;
   }
 }
